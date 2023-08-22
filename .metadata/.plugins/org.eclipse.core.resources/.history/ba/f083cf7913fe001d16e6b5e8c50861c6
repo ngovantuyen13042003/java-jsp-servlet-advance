@@ -1,0 +1,7 @@
+package st.nvt.dao;
+
+import st.nvt.model.JobModel;
+
+public interface IJobDAO extends IGenericDAO<JobModel>{
+
+}

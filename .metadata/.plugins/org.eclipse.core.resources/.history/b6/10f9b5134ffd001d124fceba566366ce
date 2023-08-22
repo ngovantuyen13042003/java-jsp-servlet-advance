@@ -1,0 +1,15 @@
+package st.nvt.dao;
+
+import java.util.List;
+
+import st.nvt.model.MajorModel;
+
+public class MajorDAO {
+	public List<MajorModel> getAll(){
+		String sql  = "Select * from major";
+		
+		return query(sql, new MajorDAO());
+	}
+	
+	
+}

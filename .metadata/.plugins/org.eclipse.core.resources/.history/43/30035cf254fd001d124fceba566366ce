@@ -1,0 +1,7 @@
+package st.nvt.dao.impl;
+
+import java.util.List;
+
+public interface DAOInteface {
+	List<E>
+}

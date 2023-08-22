@@ -1,0 +1,7 @@
+package st.nvt.service;
+
+import st.nvt.model.StudentModel;
+
+public interface IStudentService {
+	insert(StudentModel student);
+}

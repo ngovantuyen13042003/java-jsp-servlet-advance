@@ -1,0 +1,25 @@
+package st.nvt.mapper;
+
+import java.sql.ResultSet;
+
+import st.nvt.model.MajorModel;
+
+public class MajorMapper implements RowMapper<MajorModel> {
+
+	@SuppressWarnings("null")
+	@Override
+	public MajorModel mapprow(ResultSet rs) {
+
+		MajorModel major = null;
+		try {
+			major.setName("name");
+			major.setCategory("category");
+			major.setIdMajor("idmajor");
+			return major;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+}

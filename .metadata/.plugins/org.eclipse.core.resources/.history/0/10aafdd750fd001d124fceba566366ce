@@ -1,0 +1,17 @@
+package st.nvt.dao;
+
+import java.util.List;
+
+import st.nvt.mapper.MajorMapper;
+import st.nvt.mapper.RowMapper;
+import st.nvt.model.MajorModel;
+
+public class MajorDAO extends AbstractDAO<MajorDAO>{
+	public List<MajorModel> getAll(){
+		String sql  = "Select * from major";
+		
+		return query(sql, new MajorMapper());
+	}
+	
+	
+}

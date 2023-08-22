@@ -1,0 +1,19 @@
+package st.nvt.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import st.nvt.mapper.RowMapper;
+
+public class AbstractDAO<T> {
+
+	public List<T> query(String  sql , RowMapper<T> rowMapper){
+		List<T> result = new ArrayList<>();
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+}

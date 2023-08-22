@@ -1,0 +1,5 @@
+package st.nvt.mapper;
+
+public abstract class RowMapper {
+	
+}

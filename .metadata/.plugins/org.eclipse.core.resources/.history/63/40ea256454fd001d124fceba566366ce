@@ -1,0 +1,17 @@
+package st.nvt.service.impl;
+
+import java.util.List;
+
+import st.nvt.dao.MajorDAO;
+import st.nvt.model.MajorModel;
+import st.nvt.service.IMajorService;
+
+public class MajorService implements IMajorService{
+
+	@Override
+	public List<MajorModel> findAll() {
+		MajorDAO majorDAO = new MajorDAO();
+		return majorDAO.getAll();
+	}
+
+}

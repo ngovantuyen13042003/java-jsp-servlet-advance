@@ -1,0 +1,6 @@
+package st.nvt.dao;
+
+public abstract class AbstractModel {
+
+	private 
+}

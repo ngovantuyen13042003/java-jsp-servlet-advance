@@ -1,0 +1,19 @@
+package st.nvt.dao.impl;
+
+import java.util.List;
+
+import st.nvt.model.GraduateModel;
+
+public class GraduateDAO implements DAOInteface<GraduateModel> {
+
+	@Override
+	public List<GraduateModel> getAll() {
+		return null;
+	}
+
+	@Override
+	public GraduateModel getById() {
+		return null;
+	}
+	
+}

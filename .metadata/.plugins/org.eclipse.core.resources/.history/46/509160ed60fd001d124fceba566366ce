@@ -1,0 +1,8 @@
+package st.nvt.dao.impl;
+
+import st.nvt.dao.IGenericDAO;
+import st.nvt.model.SchoolModel;
+
+public class SchoolDAO extends AbstractDAO<SchoolModel> implements IGenericDAO<SchoolModel>{
+
+}

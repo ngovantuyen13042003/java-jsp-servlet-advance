@@ -1,0 +1,22 @@
+package st.nvt.mapper;
+
+import java.sql.ResultSet;
+
+import st.nvt.model.SchoolModel;
+
+public class SchoolMapper implements RowMapper<SchoolModel>{
+
+	@Override
+	public SchoolModel mapprow(ResultSet rs) {
+		SchoolModel school = new SchoolModel();
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		return null;
+	}
+
+}

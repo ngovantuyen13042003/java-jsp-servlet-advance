@@ -1,0 +1,47 @@
+package st.nvt.utils;
+
+import java.util.Date;
+import java.sql.Timestamp;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.commons.beanutils.BeanUtils;
+import org.apache.commons.beanutils.ConvertUtils;
+import org.apache.commons.beanutils.Converter;
+import org.apache.commons.beanutils.converters.DateConverter;
+
+public class FormUtil {
+	@SuppressWarnings("deprecation")
+	public static <T> T toModel(Class<T> clazz, HttpServletRequest request) {
+	    T object = null;
+	    try {
+	        DateConverter dateConverter = new DateConverter(new Date());
+	        dateConverter.setPattern("dd/MM/yyyy");
+	        ConvertUtils.register(dateConverter, Date.class);
+
+	        Converter timestampConverter = new Converter() {
+	            @SuppressWarnings("unchecked")
+	            @Override
+	            public <T> T convert(Class<T> type, Object value) {
+	                if (value instanceof Timestamp) {
+	                    return (T) value;
+	                } else if (value instanceof String) {
+	                    try {
+	                        return (T) Timestamp.valueOf((String) value);
+	                    } catch (IllegalArgumentException e) {
+	                        return null;
+	                    }
+	                }
+	                return null;
+	            }
+	        };
+	        ConvertUtils.register(timestampConverter, Timestamp.class);
+
+	        object = clazz.newInstance();
+	        BeanUtils.populate(object, request.getParameterMap());
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+	    return object;
+	}
+}

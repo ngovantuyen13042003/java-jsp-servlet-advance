@@ -1,0 +1,7 @@
+package st.nvt.mapper;
+
+import st.nvt.model.StudentModel;
+
+public class StudentMapper implements RowMapper<StudentModel>{
+	
+}

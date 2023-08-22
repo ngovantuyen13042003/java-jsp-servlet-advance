@@ -1,0 +1,4 @@
+package st.nvt.service;abstract
+public class StudentService {
+
+}

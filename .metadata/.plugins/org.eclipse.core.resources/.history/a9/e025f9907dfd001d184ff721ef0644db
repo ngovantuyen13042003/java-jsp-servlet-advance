@@ -1,0 +1,81 @@
+package st.nvt.test;
+
+import java.util.List;
+
+import st.nvt.model.MajorModel;
+import st.nvt.model.SchoolModel;
+import st.nvt.service.IMajorService;
+import st.nvt.service.ISchoolService;
+import st.nvt.service.impl.MajorService;
+import st.nvt.service.impl.SchoolService;
+
+public class Test {
+	public static void main(String[] args) {
+//		IMajorService iMajor = new MajorService();
+//		List<MajorModel> list = iMajor.findAll();
+//		for (MajorModel majorModel : list) {
+//			System.out.println(majorModel);
+//		}
+//		
+//		
+//		System.out.println(iMajor.findOne("M02"));
+//		
+//		
+//		
+//		
+//		System.out.println("=======================");
+//		
+//		ISchoolService schoolService = new SchoolService();
+//		List<SchoolModel> l = schoolService.findAll();
+//		for (SchoolModel schoolModel : l) {
+//			System.out.println(l);
+//		}
+		
+		SchoolModel school = new SchoolModel();
+		school.setAddress("Ngũ Hàng Sơn");
+		school.setIdSchool("S05");
+		school.setName("Đại học kinh tế");
+		school.setPhoneNumber("0216361261");
+		
+		ISchoolService service = new SchoolService()
+				;
+		String id = service.insert(school);
+		
+		
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

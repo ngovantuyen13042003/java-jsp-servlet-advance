@@ -1,0 +1,16 @@
+package st.nvt.model;
+
+import java.sql.Timestamp;
+
+import lombok.Data;
+
+@Data
+public class JobModel {
+	private String identityCardNumber;
+	private Timestamp dateEnterCompany;
+	private String idMajor;
+	private String nameJob;
+	private String nameCompany;
+	private String addressCompany;
+	private Timestamp workingTime;
+}

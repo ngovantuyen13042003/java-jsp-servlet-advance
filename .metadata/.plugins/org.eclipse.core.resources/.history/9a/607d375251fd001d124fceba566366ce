@@ -1,0 +1,12 @@
+package st.nvt.test;
+
+import java.util.Iterator;
+
+import st.nvt.dao.MajorDAO;
+
+public class Test {
+	public static void main(String[] args) {
+		MajorDAO mDAO = new MajorDAO();
+		Li
+	}
+}

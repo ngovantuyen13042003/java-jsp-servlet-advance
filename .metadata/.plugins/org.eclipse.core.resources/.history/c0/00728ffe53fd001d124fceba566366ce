@@ -1,0 +1,7 @@
+package st.nvt.service.impl;
+
+import st.nvt.service.IMajorService;
+
+public class MajorService implements IMajorService{
+
+}

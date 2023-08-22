@@ -1,0 +1,9 @@
+package st.nvt.dao.impl;
+
+import java.util.List;
+
+import st.nvt.model.StudentModel;
+
+public class StudentDAO{
+	
+}

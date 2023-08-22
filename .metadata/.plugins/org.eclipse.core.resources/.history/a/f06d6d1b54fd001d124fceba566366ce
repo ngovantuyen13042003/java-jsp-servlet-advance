@@ -1,0 +1,16 @@
+package st.nvt.test;
+
+import java.util.List;
+
+import st.nvt.dao.MajorDAO;
+import st.nvt.model.MajorModel;
+
+public class Test {
+	public static void main(String[] args) {
+		MajorDAO mDAO = new MajorDAO();
+		List<MajorModel> list = mDAO.getAll();
+		for (MajorModel majorModel : list) {
+			System.out.println(majorModel);
+		}
+	}
+}

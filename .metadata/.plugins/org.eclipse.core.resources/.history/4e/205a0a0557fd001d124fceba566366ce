@@ -1,0 +1,20 @@
+package st.nvt.dao.impl;
+
+import java.util.List;
+
+import st.nvt.model.StudentModel;
+
+public class StudentDAO implements DAOInteface<StudentModel> {
+
+	@Override
+	public List<StudentModel> getAll() {
+		return null;
+	}
+
+	@Override
+	public StudentModel getById() {
+		
+		return null;
+	}
+	
+}

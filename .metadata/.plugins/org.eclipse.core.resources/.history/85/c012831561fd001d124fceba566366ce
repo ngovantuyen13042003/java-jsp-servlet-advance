@@ -1,0 +1,16 @@
+package st.nvt.dao.impl;
+
+import java.util.List;
+
+import st.nvt.dao.ISchoolDAO;
+import st.nvt.model.SchoolModel;
+
+public class SchoolDAO extends AbstractDAO<SchoolModel> implements ISchoolDAO{
+
+	@Override
+	public List<SchoolModel> findAll() {
+		String sql  = "Select * from school";
+		return null;
+	}
+
+}

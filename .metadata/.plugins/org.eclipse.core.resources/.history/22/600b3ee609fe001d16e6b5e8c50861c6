@@ -1,0 +1,7 @@
+package st.nvt.dao;
+
+import st.nvt.model.StudentModel;
+
+public interface IStudentDAO extends IGenericDAO<StudentModel>{
+	Boolean insert(StudentModel student);
+}

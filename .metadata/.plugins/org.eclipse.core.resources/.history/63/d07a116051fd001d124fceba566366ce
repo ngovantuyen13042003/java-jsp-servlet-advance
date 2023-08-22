@@ -1,0 +1,10 @@
+package st.nvt.model;
+
+import lombok.Data;
+
+@Data
+public class MajorModel {
+	private String idMajor;
+	private String name;
+	private String category;
+}	

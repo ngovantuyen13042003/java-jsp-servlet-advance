@@ -1,0 +1,15 @@
+package st.nvt.service.impl;
+
+import st.nvt.dao.IStudentDAO;
+import st.nvt.dao.impl.StudentDAO;
+import st.nvt.model.StudentModel;
+import st.nvt.service.IStudentService;
+
+public class StudentService implements IStudentService{
+	IStudentDAO studentDAO = new StudentDAO();
+	@Override
+	public String insert(StudentModel student) {
+		return studentDAO.insert(student);
+	}
+
+}

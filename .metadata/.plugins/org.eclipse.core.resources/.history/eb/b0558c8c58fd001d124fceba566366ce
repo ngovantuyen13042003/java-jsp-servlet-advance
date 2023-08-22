@@ -1,0 +1,8 @@
+package st.nvt.dao;
+
+import java.util.List;
+
+public interface IMajorDAO<T> extends IGenericDAO<T>{
+	List<T> getAll();
+	T getById(String id);
+}

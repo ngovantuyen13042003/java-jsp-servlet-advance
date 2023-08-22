@@ -1,0 +1,7 @@
+package st.nvt.dao;
+
+import st.nvt.model.GraduateModel;
+
+public interface IGranduateDAO extends IGenericDAO<GraduateModel>{
+	String insert(GraduateModel graduateModel);
+}
