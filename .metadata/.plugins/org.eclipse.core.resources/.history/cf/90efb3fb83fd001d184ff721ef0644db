@@ -1,6 +1,0 @@
-package st.nvt.service;
-
-import st.nvt.model.GraduateModel;
-
-public interface IGradauteService {
-}

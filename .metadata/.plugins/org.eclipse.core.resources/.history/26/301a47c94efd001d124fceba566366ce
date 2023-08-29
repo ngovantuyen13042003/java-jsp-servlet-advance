@@ -1,7 +1,0 @@
-package st.nvt.mapper;
-
-import st.nvt.model.MajorModel;
-
-public class MajorMapper implements RowMapper<MajorModel>{
-
-}

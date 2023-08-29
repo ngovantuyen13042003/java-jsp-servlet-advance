@@ -1,7 +1,0 @@
-package st.nvt.dao;
-
-import java.util.List;
-
-public class GraduateDAO {
-	
-}

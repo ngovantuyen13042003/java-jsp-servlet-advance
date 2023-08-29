@@ -1,9 +1,0 @@
-package st.nvt.dao;
-
-import java.util.List;
-
-public interface IMajorDAO<T> {
-	List<T> getAll();
-	
-	T getById();
-}

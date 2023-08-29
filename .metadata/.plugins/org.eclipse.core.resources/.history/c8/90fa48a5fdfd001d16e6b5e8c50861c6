@@ -1,7 +1,0 @@
-package st.nvt.dao;
-
-import st.nvt.model.StudentModel;
-
-public interface IStudentDAO extends IGenericDAO<StudentModel>{
-	String insert(StudentModel student);
-}

@@ -1,5 +1,4 @@
 INDEX VERSION 1.4+D:\TestFPT\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-744661572.index
 277741234.index
 21517004.index
 405114010.index
